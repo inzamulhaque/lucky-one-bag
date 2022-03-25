@@ -25,6 +25,21 @@ const Shop = () => {
         }
     }
 
+    const handleselectOne = () => {
+        const oneItem = addCart.find((product, index) => index === Math.floor(Math.random() * 4));
+        setAddcart([oneItem]);
+    }
+
+    const handleclearAll = () => {
+        setAddcart([]);
+    }
+
+    const handledeleteOneItem = (id) => {
+        const newItems = addCart.filter((product) => product.id !== id);
+        setAddcart([...newItems]);
+    }
+
+    const handlers = { handleselectOne, handleclearAll, handledeleteOneItem };
     return (
         <div className='shop'>
             <div className="productsContainer">
@@ -32,9 +47,8 @@ const Shop = () => {
                     products.map(product => <Product key={product.id} product={product} clickHandler={handleAddCart} />)
                 }
             </div>
-
             <div className="cartContainer">
-                <Cart products={addCart} />
+                <Cart products={addCart} handlers={handlers} />
             </div>
         </div>
     );
