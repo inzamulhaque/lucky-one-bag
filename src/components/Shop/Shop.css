@@ -10,3 +10,19 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
+
+@media screen and (max-width: 688px) {
+    .shop {
+        margin: 15px 10px;
+        grid-template-columns: 1fr;
+    }
+
+    .productsContainer {
+        order: 1;
+    }
+
+    .productsContainer {
+        order: 2;
+        grid-template-columns: 1fr;
+    }
+}
