@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "question": "How React Works?",
+        "answer": {
+            "frist": "react কাজ করার জন্য mainly দুইটা node packege প্রয়োজন। একটি React অন্যটি React DOM. একটি component যখন লেখা হয় তখন সেটি javascript code বা jsx হিসাবে লেখা হয়। এই javascript বা jsx code টাকে আমাদের html code এ রুপান্তর করতে হয়। কারণ সেটা আমরা web page এ দেখাবো। এই কাজটি React নামক packege টি করে থাকে। এবার একটি html file এর মধ্য ঐ html code টাকে React DOM নামক packege টি injeck করে দেই। এবং React তার নিজের কাছে একটি Virtual DOM রাখে যাতে web page এর কোথাও কোনো change হলে full page update না করে website এর DOM এবং React এর Virtual DOM compare করে যেখানে change হয়েছে সেখানে update করতে পারে।"
+        }
+    },
+    {
+        "id": 2,
+        "question": "How useState Works?",
+        "answer": {
+            "frist": "useState hook react এর functional component এ ব্যবহার করা যায়। এটি use করে আমরা react এর মধ্য state variable use করতে পারি। useState hook আমাদের দুইটা value দেয়। একটি state reference অন্যটি dispatch. dispatch একটি Asynchronous function. useState এর মধ্য আমরা যে initial value দেয় সেটি state reference এ থাকে। পরে এর মান update করার জন্য dispatch function use হয়। dispatch function call করে তার মধ্য যে মান দেওয়া হয় সেটি তখন state reference এ গিয়ে stored হয়।"
+        }
+    },
+    {
+        "id": 3,
+        "question": "Props Vs State",
+        "answer": {
+            "frist": "Props: 1. Props দিয়ে data এক component থেকে তার child component এ পাঠানো হয়। 2. এটি immutable (পরিবর্তন করা যায় না) 3. Props are read-only.",
+            "second": "State: 1.state দিয়ে এই component এর মধ্য data use করা যায়। 2. এটি mutable (পরিবর্তন করা যায়) 3. state পড়া এবং লেখা দুইটাই যায়।"
+        }
+    }
+]

@@ -12,7 +12,7 @@ const Product = ({ product, clickHandler }) => {
             </div>
             <div className="productInfo">
                 <h3>Name: {name}</h3>
-                <p>Price: {price}</p>
+                <p>Price: ${price}</p>
                 <button className='addCartBtn' onClick={() => clickHandler(id)}>Add To Cart <FontAwesomeIcon icon={faShoppingCart} /></button>
             </div>
         </div>
