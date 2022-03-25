@@ -1,0 +1,14 @@
+.siteTitle {
+    margin-top: 15px;
+    text-align: center;
+    color: royalblue;
+    margin-bottom: 5px;
+}
+
+.subTitle {
+    margin-top: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+}
