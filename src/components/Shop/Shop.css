@@ -1,0 +1,6 @@
+.shop {
+    margin: 35px 100px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
