@@ -4,11 +4,13 @@ import { faCheck, faTrash } from '@fortawesome/free-solid-svg-icons';
 import "./Cart.css";
 import AddedToCart from '../AddedToCart/AddedToCart';
 
-const Cart = () => {
+const Cart = ({ products }) => {
     return (
         <div className='cart'>
             <h2>selected Bags</h2>
-            <AddedToCart />
+            {
+                products.map(product => <AddedToCart key={product.id} showProduct={product} />)
+            }
             <button className='chooseBtn'>Choose 1 For Me <FontAwesomeIcon icon={faCheck} /></button>
             <br />
             <button className='resetBtn'>Clear All <FontAwesomeIcon icon={faTrash} /></button>

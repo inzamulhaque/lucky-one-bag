@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import "./AddedToCart.css";
 
-const AddedToCart = () => {
+const AddedToCart = ({ showProduct }) => {
+    const { id, name, image } = showProduct;
     return (
         <div className='addedToCart'>
-            <img src="https://splendid-ganache-90bb08.netlify.app/images/a.jpg" alt="Product Image" className="addedProductImage" />
-            <h3>Name: </h3>
+            <img src={image} alt="Product Image" className="addedProductImage" />
+            <h5>{name} </h5>
             <p className='deleteToCart'><FontAwesomeIcon icon={faTrash} /></p>
         </div>
     );
