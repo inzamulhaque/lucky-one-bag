@@ -26,7 +26,8 @@ const Shop = () => {
     }
 
     const handleselectOne = () => {
-        const oneItem = addCart.find((product, index) => index === Math.floor(Math.random() * 4));
+        const selectedindex = Math.floor(Math.random() * addCart.length);
+        const oneItem = addCart.find((product, index) => index === selectedindex);
         setAddcart([oneItem]);
     }
 

@@ -4,7 +4,7 @@ import "./Header.css";
 const Header = () => {
     return (
         <div>
-            <h1 className='siteTitle'>Max Shop</h1>
+            <h1 className='siteTitle'>Max Backpack Shop</h1>
             <p className='subTitle'>choose your favorite 4</p>
         </div>
     );
