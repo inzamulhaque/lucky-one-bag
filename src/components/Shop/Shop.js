@@ -26,9 +26,11 @@ const Shop = () => {
     }
 
     const handleselectOne = () => {
-        const selectedindex = Math.floor(Math.random() * addCart.length);
-        const oneItem = addCart.find((product, index) => index === selectedindex);
-        setAddcart([oneItem]);
+        if (addCart.length !== 0) {
+            const selectedindex = Math.floor(Math.random() * addCart.length);
+            const oneItem = addCart.find((product, index) => index === selectedindex);
+            setAddcart([oneItem]);
+        }
     }
 
     const handleclearAll = () => {

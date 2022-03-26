@@ -13,15 +13,10 @@ const Question = () => {
     return (
         <>
             <h1 className="title">Question</h1>
-            <div className='question'>
-                <div className="showQuestion">
-                    {
-                        question.map(quetion => <QuestionCart key={quetion.id} quetion={quetion} />)
-                    }
-                </div>
-                <div className="whiteSpaceForCart">
-
-                </div>
+            <div className="showQuestion">
+                {
+                    question.map(quetion => <QuestionCart key={quetion.id} quetion={quetion} />)
+                }
             </div>
         </>
     );
